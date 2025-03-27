@@ -23,4 +23,8 @@ public class Krug {
     public void setRadijus(double radijus){
         this.radijus=radijus;
     }
+
+
+
+
 }
