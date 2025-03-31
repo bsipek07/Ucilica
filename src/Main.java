@@ -1,22 +1,31 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main (String[] args){
 
+        Scanner input = new Scanner(System.in);
+
         Krug noviKrug = new Krug("krug1",4.5);
-        Krug krug2= new Krug("krug1",4.5);
-        Krug krug3=noviKrug;
-        Pravokutnik noviPravokutnik = new Pravokutnik("pravokutnik1",5,8);
+        Pravokutnik noviPravokutnik = new Pravokutnik("pravokutnik1",0.5,8);
         Trokut noviTrokut= new Trokut("trokut1",3,4,5);
 
-        if(noviKrug instanceof Krug){
+        if(noviKrug instanceof GeometrijskiLIk){
             noviKrug.setRadijus(8.3);
             System.out.println("Novi radijus je: "+noviKrug.getRadijus());
+            System.out.println("Povrsina kruga je: "+noviKrug.povrsina()+"\nOpseg kruga je:"+noviKrug.opseg());
+        }
+        if(noviPravokutnik.getStrA()<=1){
+            System.out.println("Unesi ponovo stranicu A:");
+            noviPravokutnik.setStrA(input.nextDouble());
+
+            System.out.println("Povrsina pravokutnika je: "+noviPravokutnik.povrsina()+"\nOpseg pravokutnika je:"+noviPravokutnik.opseg());
+        }
+        else { System.out.println("Povrsina pravokutnika je: "+noviPravokutnik.povrsina()+"\nOpseg pravokutnika je:"+noviPravokutnik.opseg());
         }
 
-        System.out.println(noviKrug==krug2);
-        System.out.println(noviKrug==krug3);
+        System.out.println(noviTrokut.toString());
 
-        System.out.println(noviKrug.equals(krug2));
 
     }
 }
