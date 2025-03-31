@@ -21,7 +21,7 @@ public class Pravokutnik extends GeometrijskiLIk {
         return strB;
     }
     public void setStrB(double strB){
-        this.strA=strB;
+        this.strB=strB;
     }
 
 

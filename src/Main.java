@@ -7,7 +7,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         Krug noviKrug = new Krug("krug1",4.5);
-        Pravokutnik noviPravokutnik = new Pravokutnik("pravokutnik1",0.5,8);
+        Pravokutnik noviPravokutnik = new Pravokutnik("pravokutnik1",5,8);
         Trokut noviTrokut= new Trokut("trokut1",3,4,5);
 
         if(noviKrug instanceof GeometrijskiLIk){
@@ -25,6 +25,18 @@ public class Main {
         }
 
         System.out.println(noviTrokut.toString());
+
+        GeometrijskiLIk[] lik = new GeometrijskiLIk[3];
+        lik[0]=noviKrug;
+        lik[1]=noviPravokutnik;
+        lik[2]=noviTrokut;
+        for(int i=0;i<3;i++){
+            if(lik[i] instanceof Krug){
+                System.out.println("Krug");
+            }
+        }
+
+
 
 
     }
