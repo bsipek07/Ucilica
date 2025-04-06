@@ -27,7 +27,6 @@ public class Main {
             System.out.println("Povrsina pravokutnika je: " + noviPravokutnik.povrsina() + "\nOpseg pravokutnika je:" + noviPravokutnik.opseg());
         }
 
-        System.out.println(noviTrokut.toString());
 
 
 
@@ -40,6 +39,8 @@ public class Main {
         Collections.sort(ucilica.getLikovi());
 
             System.out.println(ucilica.getLikovi().toString());
+
+            System.out.println(noviKrug.crtaj());
 
     }
 

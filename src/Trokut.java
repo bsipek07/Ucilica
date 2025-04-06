@@ -49,4 +49,9 @@ public class Trokut extends GeometrijskiLIk  {
         double s=(strA+strB+strC)/2;
         return Math.sqrt(s*(s-strA)*(s-strB)*(s-strC));
     }
+
+    @Override
+    public String crtaj() {
+        return "Trokut";
+    }
 }

@@ -30,4 +30,9 @@ public class Krug extends GeometrijskiLIk {
     public double povrsina() {
         return (Math.pow(radijus,2))* Math.PI;
     }
+
+    @Override
+    public String crtaj() {
+        return "Krug";
+    }
 }

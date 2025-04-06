@@ -34,4 +34,9 @@ public class Pravokutnik extends GeometrijskiLIk {
     public double povrsina() {
         return (strA*strB);
     }
+
+    @Override
+    public String crtaj() {
+        return "Pravokutnik";
+    }
 }
